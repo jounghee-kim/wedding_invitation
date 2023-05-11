@@ -89,7 +89,7 @@ body p {
     width: 100%;
     height: 100vw;
     max-height: 345px;
-    background: url("/resources/image/main.jpg") no-repeat;
+    background: url("resources/image/main.jpg") no-repeat;
     background-size: cover;
     background-position: center top;
     opacity: 0.9;
@@ -149,7 +149,7 @@ body p {
     font-size: 22px;
     letter-spacing: 1px;
 
-    -webkit-mask-image: url('/resources/image/grunge.png');
+    -webkit-mask-image: url('resources/image/grunge.png');
     -webkit-mask-size: 117px 120px;
     mix-blend-mode: multiply;
 }
@@ -393,7 +393,7 @@ body p {
 }
 
 .fourth-content-detail {
-    background: url("/resources/image/map.jpg") no-repeat;
+    background: url("resources/image/map.jpg") no-repeat;
     background-size: 375px auto;
     background-position: 50% 160px;
     opacity: 0.9;
