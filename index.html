@@ -16,6 +16,9 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
     <link href="resources/css/default.css?v=191223" rel="stylesheet">
 
+    <!-- 꽃잎 추가 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css">
+
     <!-- jQuery -->
     <script src="resources/js/jquery-2.2.3.min.js"></script>
     <script src="resources/js/jquery.slider.min.js"></script>
@@ -219,7 +222,9 @@
         </ul>
     </div>
     <script src="resources/js/common.js"></script>
-    <script src="resources/js/jquery.mousewheel.min.js"></script>    
+    <script src="resources/js/jquery.mousewheel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
+
 
     <script>
         $(document).ready(function() {
@@ -230,6 +235,9 @@
             enableMouseScroll();
             // initializeFirebaseUi();
             // initializeFirebaseDB();
+
+            var sakura = new Sakura('body');
+
         });
         $("body").waitForImages(true).done(function() {
             $("#div-loading").animate({opacity: 0}, 1000, function() {
