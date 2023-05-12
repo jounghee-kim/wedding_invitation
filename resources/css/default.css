@@ -858,9 +858,16 @@ div, button, p, img, span {
     border-radius: 40px;
 }
 
-lottie-player {
+.center_lottie {
     display: block;
     /* margin-top: 5px;
     margin-bottom: 50px; */
-    margin: 10px auto;
+    margin: 0 auto;
+}
+
+.transparent_lottie {
+    display: block;
+    /* margin-top: 5px;
+    margin-bottom: 50px; */
+    margin: 0 auto;
 }

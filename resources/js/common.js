@@ -140,6 +140,16 @@ function copyToClipboard(val) {
     alert("주소가 복사되었습니다");
 }
 
+function copyAccountToClipboard(val, name) {
+    var t = document.createElement("textarea");
+    document.body.appendChild(t);
+    t.value = val;
+    t.select();
+    document.execCommand('copy');
+    document.body.removeChild(t);
+    alert(name + "의 계좌번호 복사되었습니다");
+}
+
 function prevImage() {
     var pageString = $(".indicator").text();
     var curPage = parseInt(pageString.split("/")[0]);
@@ -299,4 +309,9 @@ function convertMsg (html) {
     var tmp = document.createElement("DIV");
     tmp.innerHTML = html;
     return tmp.textContent || tmp.innerText || "";
+}
+
+function ringPlay(){
+    var player = document.querySelector("#lottie-ring");
+    player.play();
 }

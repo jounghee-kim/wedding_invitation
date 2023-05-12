@@ -45,7 +45,7 @@
                     <div class="first-content-detail">
                         <div class="first-content-text">
                             <p class="title">Jounghee & Yujin</p>
-                            <p class="date">2023. 12. 03. Sun 13:30pm</p>
+                            <p class="date">2023. 12. 03. Sun 15:30pm</p>
                         </div>
                         <p id="stamp" class="stamp">D+95</p>
                     </div>
@@ -62,6 +62,7 @@
                             <br/> 두 사람의 언약을 지켜봐 주시면
                             <br/> 더 없는 기쁨으로 간직하겠습니다.
                         </p>
+                        <lottie-player id='lottie-crown' src="https://assets3.lottiefiles.com/packages/lf20_vf7vzf32.json"  background="transparent"  speed="1"  mode="bounce" style="position: absolute; width: 344px; height: 213.5px;" hover loop></lottie-player>
                         <div style="margin-top: 120px;">
                             <hr />
                                 <p class="parent-name">김현승 최영희 <span class="child-name">의 장남</span> 정희<br />도종도 김정현 <span class="child-name">의 차녀</span> 유진
@@ -74,6 +75,7 @@
             <li>
                 <div class="fifth-content">
                     <div class="fifth-content-detail">
+                        <lottie-player id='lottie-ring' src="https://assets3.lottiefiles.com/packages/lf20_qelkweiv.json"  background="transparent"  speed="1"  mode="bounce" style="position:absolute; width: 300px; height: 171px;"></lottie-player>
                         <p class="title">
                             Calendar
                         </p>
@@ -102,7 +104,7 @@
                                     <td class="holiday">2</td>
                                 </tr>
                                 <tr>
-                                    <td style="font-weight: bold;">
+                                    <td style="font-weight: bold;" onclick="ringPlay();">
                                         <span class="d-day">12. 3</span>
                                         <br>
                                         <span style="line-height: 2.0;">💍</span>
@@ -121,7 +123,7 @@
                                     <td>13</td>
                                     <td>14</td>
                                     <td>15</td>
-                                    <td>16</td>
+                                    <td class="holiday">16</td>
                                 </tr>
                                 <tr>
                                     <td class="holiday">17</td>
@@ -130,7 +132,7 @@
                                     <td>20</td>
                                     <td>21</td>
                                     <td>22</td>
-                                    <td>23</td>
+                                    <td class="holiday">23</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -219,7 +221,7 @@
                             <br />행복하게 살겠습니다.
                         </p>
                         
-                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_7ub0glk3.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+                        <lottie-player class='center_lottie' src="https://assets3.lottiefiles.com/packages/lf20_7ub0glk3.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
                     
                         <div style="position: absolute; width: 100%; bottom: 80px; text-align: center;">
                             <button class="custom-button" onclick="openGroomAccount();">신랑 혼주 계좌번호</button><br/><br/>
@@ -234,15 +236,15 @@
                         <div style="margin-top: 50px;">
                              
                             <p class="parent-name">도종도<span class="child-name"> 신부 아버지</span></p>
-                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                            <p class="account" onclick="copyAccountToClipboard('카카오뱅크 3333-01-0582511', '신부 아버지');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
                             <hr />
                         
                             <p class="parent-name">김정현<span class="child-name"> 신부 어머니</span></p>
-                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                            <p class="account" onclick="copyAccountToClipboard('카카오뱅크 3333-01-0582511', '신부 어머니');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
                             <hr />
                         
                             <p class="parent-name">도유진<span class="child-name"> 신부</span></p>
-                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                            <p class="account" onclick="copyAccountToClipboard('카카오뱅크 3333-01-0582511', '신부');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
                         
                         </div>
                         <button class="custom-button" onclick="closeAccount();">×</button>
@@ -255,15 +257,15 @@
                         <div style="margin-top: 50px;">
                              
                             <p class="parent-name">김현승<span class="child-name"> 신랑 아버지</span></p>
-                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                            <p class="account" onclick="copyAccountToClipboard('카카오뱅크 3333-01-0582511', '신랑 아버지');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
                             <hr />
                         
                             <p class="parent-name">최영희<span class="child-name"> 신랑 어머니</span></p>
-                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                            <p class="account" onclick="copyAccountToClipboard('카카오뱅크 3333-01-0582511', '신랑 어머니');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
                             <hr />
                         
                             <p class="parent-name">김정희<span class="child-name"> 신랑</span></p>
-                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                            <p class="account" onclick="copyAccountToClipboard('카카오뱅크 3333-01-0582511', '신랑');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
                         
                         </div>
                         <button class="custom-button" onclick="closeAccount();">×</button>
