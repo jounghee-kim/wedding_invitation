@@ -44,7 +44,7 @@ function initializeCardSlider() {
 }
 
 function initializeDateStamp() {
-    var dday = new Date("Feburay 1, 2020 00:00:00").getTime();//디데이
+    var dday = new Date("December 3, 2023 00:00:00").getTime();//디데이
     var nowday = new Date();//현재
     nowday.setHours(0);
     nowday.setMinutes(0);
@@ -52,7 +52,6 @@ function initializeDateStamp() {
     nowday = nowday.getTime();//밀리세컨드 단위변환
     var distance = dday - nowday;//디데이에서 현재까지 뺀다.
     var d = Math.ceil(distance / (1000 * 60 * 60 * 24));//일
-
     if (d > 0){
         $("#stamp").text("D-"+d);
     }
@@ -91,6 +90,28 @@ function launchDaumMap() {
     }, 1000);
 }
 
+function launchKakaoMap() {
+    setTimeout(function() {
+        if (navigator.userAgentData.mobile) {
+            location.href = "kakaomap://place?id=7975840";
+        }
+        else{
+            location.href = "https://m.map.kakao.com/actions/searchView?q=at%ED%8F%AC%EB%A0%88#!/2107641562/map/place";
+        }
+    }, 500);
+}
+
+function launchNaverMap() {
+    setTimeout(function() {
+        if (navigator.userAgentData.mobile) {
+            location.href = "nmap://place?id=11534903";
+        }
+        else{
+            location.href = "https://m.place.naver.com/place/11534903/location?zoomLevel=14.000&subtab=location&selected_place_id=11534903";
+        }
+    }, 500);
+}
+
 function copyToClipboard(val) {
     var t = document.createElement("textarea");
     document.body.appendChild(t);
@@ -125,7 +146,7 @@ function switchImage(beforePage, afterPage, maxPage) {
     setTimeout(function(){ 
         $(".photo-area").eq(parseInt(afterPage)-1).removeClass('disappear');
         $(".photo-area").eq(parseInt(afterPage)-1).addClass('appear');
-    },201);
+    },51);
     $(".indicator").text(afterPage + "/" + maxPage);
 }
 

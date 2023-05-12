@@ -47,7 +47,7 @@
                             <p class="title">Jounghee & Yujin</p>
                             <p class="date">2023. 12. 03. Sun 13:30pm</p>
                         </div>
-                        <p id="stamp" class="stamp">D+35</p>
+                        <p id="stamp" class="stamp">D+95</p>
                     </div>
                 </div>
             </li>
@@ -169,9 +169,12 @@
                         <p class="title">오시는 길</p>
                         <p class="location">aT포레<br />그랜드홀(5F)</p>
                         <p class="address" onclick="copyToClipboard('서울특별시 서초구 강남대로 27');">서울특별시 서초구 강남대로 27&nbsp;<img src="resources/image/copy.png"/></p>
+                        
+                        
                         <div style="position: absolute; width: 100%; bottom: 40px; text-align: center;">
-                            <button class="custom-button" onclick="openShuttle();">셔틀안내</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <button class="custom-button" onclick="launchDaumMap();">카카오맵</button>
+                            <button class="custom-button" onclick="openShuttle();">셔틀안내</button>
+                            <button class="custom-button" onclick="launchNaverMap();">네이버맵</button>
+                            <button class="custom-button" onclick="launchKakaoMap();">카카오맵</button>
                         </div>
                     </div>
                     <div class="fourth-content-shuttle">
@@ -207,6 +210,41 @@
                     </div>
                 </div>
             </li>
+            <li>
+                <div class="seventh-content">
+                    <div class="seventh-content-detail">
+                        <p class="title">마음을 전하세요</p>
+                        <div style="margin-top: 120px;">
+                            <hr />
+                                <p class="parent-name">김현승 최영희 <span class="child-name">의 장남</span> 정희<br />도종도 김정현 <span class="child-name">의 차녀</span> 유진
+                                </p>
+                            <hr />
+                        </div>
+                        
+                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_7ub0glk3.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="second-content">
+                    <div class="second-content-detail">
+                        <p class="letter">사랑으로 물들어가는 계절,
+                            <br />연인에서 부부라는 이름으로
+                            <br />평생을 함께 하고자 합니다.
+                        </p>
+                        <p class="letter">귀한 걸음 하시어
+                            <br/> 두 사람의 언약을 지켜봐 주시면
+                            <br/> 더 없는 기쁨으로 간직하겠습니다.
+                        </p>
+                        <div style="margin-top: 120px;">
+                            <hr />
+                                <p class="parent-name">김현승 최영희 <span class="child-name">의 장남</span> 정희<br />도종도 김정현 <span class="child-name">의 차녀</span> 유진
+                                </p>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+            </li>
             <!-- <li class="sixth-content">
                 <div class="sixth-content-detail">
                     <p class="title">축하메시지</p>
@@ -229,6 +267,7 @@
     <script src="resources/js/common.js"></script>
     <script src="resources/js/jquery.mousewheel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 
     <script>
