@@ -109,24 +109,16 @@ function launchDaumMap() {
 }
 
 function launchKakaoMap() {
+    location.href = "kakaomap://place?id=7975840";
     setTimeout(function() {
-        if (navigator.userAgentData.mobile) {
-            location.href = "kakaomap://place?id=7975840";
-        }
-        else{
-            location.href = "https://m.map.kakao.com/actions/searchView?q=at%ED%8F%AC%EB%A0%88#!/2107641562/map/place";
-        }
+        location.href = "https://m.map.kakao.com/actions/searchView?q=at%ED%8F%AC%EB%A0%88#!/2107641562/map/place";
     }, 500);
 }
 
 function launchNaverMap() {
+    location.href = "nmap://place?id=11534903";
     setTimeout(function() {
-        if (navigator.userAgentData.mobile) {
-            location.href = "nmap://place?id=11534903";
-        }
-        else{
-            location.href = "https://m.place.naver.com/place/11534903/location?zoomLevel=14.000&subtab=location&selected_place_id=11534903";
-        }
+        location.href = "https://m.place.naver.com/place/11534903/location?zoomLevel=14.000&subtab=location&selected_place_id=11534903";
     }, 500);
 }
 
@@ -147,7 +139,7 @@ function copyAccountToClipboard(val, name) {
     t.select();
     document.execCommand('copy');
     document.body.removeChild(t);
-    alert(name + "의 계좌번호 복사되었습니다");
+    alert(name + "의 계좌번호가 복사되었습니다");
 }
 
 function prevImage() {
