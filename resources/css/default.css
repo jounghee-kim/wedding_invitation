@@ -89,7 +89,7 @@ body p {
     width: 100%;
     height: 100vw;
     max-height: 345px;
-    background: url("resources/image/main.jpg") no-repeat;
+    background: url("../image/main.jpg") no-repeat;
     background-size: cover;
     background-position: center top;
     opacity: 0.9;
@@ -149,7 +149,7 @@ body p {
     font-size: 22px;
     letter-spacing: 1px;
 
-    -webkit-mask-image: url('resources/image/grunge.png');
+    -webkit-mask-image: url('../image/grunge.png');
     -webkit-mask-size: 117px 120px;
     mix-blend-mode: multiply;
 }
@@ -256,14 +256,7 @@ body p {
     width: 100%;
 }
 
-.third-content .photo-area-1{
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
-}
-.third-content .photo-area-2 {
+.third-content .photo-area{
     display: none;
     height: auto;
     max-width: 100%;
@@ -271,89 +264,37 @@ body p {
     opacity: 0.9;
     mix-blend-mode: multiply;
 }
-.third-content .photo-area-3 {
-    display: none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
+
+.third-content .appear{
+    animation: fade-in 1s;
+    animation-fill-mode: forwards;
+    display: flex;
 }
-.third-content .photo-area-4 {
-    display: none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
+
+.third-content .disappear{
+    animation: fade-out 1s;
+    animation-fill-mode: forwards;
 }
-.third-content .photo-area-5 {
-    display: none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
-}
-.third-content .photo-area-6 {
-    display: none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.third-content .photo-area-7 {
-    display: none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
-}
-.third-content .photo-area-8 {
-    display: none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
-}
-.third-content .photo-area-9 {
-    display: none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
-}
-.third-content .photo-area-10 {
-    display: none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
-}
-.third-content .photo-area-11 {
-    display: none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
-}
-.third-content .photo-area-12 {
-    display: none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    opacity: 0.9;
-    mix-blend-mode: multiply;
-}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+  
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
 
 .third-content .controller-area {
     width: 100%;
@@ -393,7 +334,7 @@ body p {
 }
 
 .fourth-content-detail {
-    background: url("resources/image/map.jpg") no-repeat;
+    background: url("../image/map.jpg") no-repeat;
     background-size: 375px auto;
     background-position: 50% 160px;
     opacity: 0.9;

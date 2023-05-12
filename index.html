@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:url"                content="https://jounghee-kim.github.io/wedding_invitation" />
+    <meta property="og:url"                content="" />
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="정희 ♥ 유진" />
     <meta property="og:description"        content="저희 결혼합니다" />
@@ -142,22 +142,22 @@
                 <div class="third-content">
                     <div class="third-content-detail">
                         <div class="photo-div">
-                            <img class="photo photo-area-1" src="resources/image/photo-01.jpg"/>
-                            <img class="photo photo-area-2" src="resources/image/photo-02.jpg"/>
-                            <img class="photo photo-area-3" src="resources/image/photo-03.jpg"/>
-                            <img class="photo photo-area-4" src="resources/image/photo-04.jpg"/>
-                            <img class="photo photo-area-5" src="resources/image/photo-05.jpg"/>
-                            <img class="photo photo-area-6" src="resources/image/photo-06.jpg"/>
+                            <img class="photo photo-area" src="resources/image/photo-01.jpg" onclick="nextImage();"/>
+                            <img class="photo photo-area" src="resources/image/photo-02.jpg" onclick="nextImage();"/>
+                            <img class="photo photo-area" src="resources/image/photo-03.jpg" onclick="nextImage();"/>
+                            <img class="photo photo-area" src="resources/image/photo-04.jpg" onclick="nextImage();"/>
+                            <img class="photo photo-area" src="resources/image/photo-05.jpg" onclick="nextImage();"/>
+                            <!-- <img class="photo photo-area-6" src="resources/image/photo-06.jpg"/>
                             <img class="photo photo-area-7" src="resources/image/photo-07.jpg"/>
                             <img class="photo photo-area-8" src="resources/image/photo-08.jpg"/>
                             <img class="photo photo-area-9" src="resources/image/photo-09.jpg"/>
                             <img class="photo photo-area-10" src="resources/image/photo-10.jpg"/>
                             <img class="photo photo-area-11" src="resources/image/photo-11.jpg"/>
-                            <img class="photo photo-area-12" src="resources/image/photo-12.jpg"/>
+                            <img class="photo photo-area-12" src="resources/image/photo-12.jpg"/> -->
                         </div>
                         <div class="controller-area">
                             <button class="custom-button btn-prev-img" onclick="prevImage();">이전</button>
-                            <span class="indicator">1/12</span>
+                            <span class="indicator">1/5</span>
                             <button class="custom-button btn-next-img" onclick="nextImage();">다음</button>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                     <div class="fourth-content-detail">
                         <p class="title">오시는 길</p>
                         <p class="location">aT포레<br />그랜드홀(5F)</p>
-                        <p class="address" onclick="copyToClipboard('서울특별시 서초구 강남대로 27 (양재동 232번지)');">서울특별시 서초구 강남대로 27 (양재동 232번지)&nbsp;<img src="resources/image/copy.png"/></p>
+                        <p class="address" onclick="copyToClipboard('서울특별시 서초구 강남대로 27');">서울특별시 서초구 강남대로 27&nbsp;<img src="resources/image/copy.png"/></p>
                         <div style="position: absolute; width: 100%; bottom: 40px; text-align: center;">
                             <button class="custom-button" onclick="openShuttle();">셔틀안내</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <button class="custom-button" onclick="launchDaumMap();">카카오맵</button>
@@ -233,6 +233,7 @@
             preventDoubleTap();
             preventScrollOnReplyList();
             enableMouseScroll();
+            showFirstImage();
             // initializeFirebaseUi();
             // initializeFirebaseDB();
 

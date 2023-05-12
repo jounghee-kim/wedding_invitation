@@ -105,7 +105,8 @@ function prevImage() {
     var pageString = $(".indicator").text();
     var curPage = parseInt(pageString.split("/")[0]);
     var maxPage = parseInt(pageString.split("/")[1]);
-    var prevPage = (curPage - 1 == 0) ? 12 : curPage - 1;
+    var maxLength = $('.photo-area').length
+    var prevPage = (curPage - 1 == 0) ? maxLength : curPage - 1;
     switchImage(curPage, prevPage, maxPage);
 }
 
@@ -118,9 +119,20 @@ function nextImage() {
 }
 
 function switchImage(beforePage, afterPage, maxPage) {
-    $(".photo-area-"+beforePage).css("display", "none");
-    $(".photo-area-"+afterPage).css("display", "block");
+    
+    $(".photo-area").eq(parseInt(beforePage)-1).removeClass('appear');
+    $(".photo-area").eq(parseInt(beforePage)-1).removeClass('disappear');
+    setTimeout(function(){ 
+        $(".photo-area").eq(parseInt(afterPage)-1).removeClass('disappear');
+        $(".photo-area").eq(parseInt(afterPage)-1).addClass('appear');
+    },201);
     $(".indicator").text(afterPage + "/" + maxPage);
+}
+
+function showFirstImage(){
+    // 이미지 설정
+    $(".photo-area").eq(0).addClass('appear');
+    $(".indicator").text("1/" + $('.photo-area').length);
 }
 
 function preventScrollOnReplyList() {
