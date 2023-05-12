@@ -605,6 +605,9 @@ body p {
     display: table-cell;
     vertical-align: middle;
     opacity: none;
+    position: absolute;
+    padding-top: 20px;
+    height: 100%;
     width: 100%;
 }
 
@@ -636,7 +639,7 @@ body p {
 
 .seventh-content .parent-name {
     font-weight: 700;
-    text-align: center;
+    padding-left: 40px;
     font-size: 15px;
     letter-spacing: 2px;
     line-height: 2.0;   
@@ -644,16 +647,43 @@ body p {
 
 .seventh-content .child-name {
     font-weight: 400;
-    text-align: center;
+    padding-left: 40px;
     font-size: 13px;
     letter-spacing: 2px;
     line-height: 2.0;   
     color: rgba(162, 125, 64, 0.74);
 }
 
-.seventh-content-shuttle {
+.seventh-content-sub {
     display: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
+
+.seventh-content-sub .custom-button {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(197, 152, 92, 0.3);
+    border: none;
+    color: #805522 !important;
+    border-radius: 50%;
+    font-size: 18px;
+    padding: 0;
+    line-height: 1;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.seventh-content .account {
+    text-align: center;
+    font-size: 14px;
+}
+
 
 
 
@@ -829,6 +859,8 @@ div, button, p, img, span {
 }
 
 lottie-player {
-display: block;
-margin : 0 auto;
+    display: block;
+    /* margin-top: 5px;
+    margin-bottom: 50px; */
+    margin: 10px auto;
 }

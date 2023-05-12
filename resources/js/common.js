@@ -8,6 +8,24 @@ function closeShuttle() {
     $(".fourth-content-detail").css("display", "block");
 }
 
+function openBrideAccount() {
+    $(".seventh-content-detail").css("display", "none");
+    $(".seventh-content-sub.bribe").css("display", "block");
+}
+
+function openGroomAccount() {
+    $(".seventh-content-detail").css("display", "none");
+    $(".seventh-content-sub.groom").css("display", "block");
+}
+
+function closeAccount() {
+    $(".seventh-content-sub.bribe").css("display", "none");
+    $(".seventh-content-sub.groom").css("display", "none");
+    $(".seventh-content-detail").css("display", "block");
+}
+
+
+
 function initializeCardSlider() {
     $('.my-slider').cardslider({
         // keyboard navigation
@@ -34,7 +52,7 @@ function initializeCardSlider() {
         // callbacks
         beforeCardChange: null,
         afterCardChange: function(index) {
-            if (index === 4) {
+            if (index === 6) {
                 $(".arrow").fadeOut();
             } else {
                 $(".arrow").fadeIn();

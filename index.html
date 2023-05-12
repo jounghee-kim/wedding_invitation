@@ -213,13 +213,60 @@
             <li>
                 <div class="seventh-content">
                     <div class="seventh-content-detail">
-                        <p class="title">마음 전하실 곳</p>
+                        <!-- <p class="title">마음 전하실 곳</p> -->
                         <p class="letter">직접 만나지는 못해도
-                            <br />축하해주고 싶은 마음은 받아
-                            <br />더욱 행복하게 살겠습니다.
+                            <br />축하해주고 싶은 마음을 받아
+                            <br />행복하게 살겠습니다.
                         </p>
                         
                         <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_7ub0glk3.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+                    
+                        <div style="position: absolute; width: 100%; bottom: 80px; text-align: center;">
+                            <button class="custom-button" onclick="openGroomAccount();">신랑 혼주 계좌번호</button><br/><br/>
+                            <button class="custom-button" onclick="openBrideAccount();">신부 혼주 계좌번호</button>
+                        </div>
+                    </div>
+                    <div class="seventh-content-sub bribe">
+                        <p class="letter">직접 만나지는 못해도
+                            <br />축하해주고 싶은 마음을 받아
+                            <br />행복하게 살겠습니다.
+                        </p>
+                        <div style="margin-top: 50px;">
+                             
+                            <p class="parent-name">도종도<span class="child-name"> 신부 아버지</span></p>
+                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                            <hr />
+                        
+                            <p class="parent-name">김정현<span class="child-name"> 신부 어머니</span></p>
+                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                            <hr />
+                        
+                            <p class="parent-name">도유진<span class="child-name"> 신부</span></p>
+                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                        
+                        </div>
+                        <button class="custom-button" onclick="closeAccount();">×</button>
+                    </div>
+                    <div class="seventh-content-sub groom">
+                        <p class="letter">직접 만나지는 못해도
+                            <br />축하해주고 싶은 마음을 받아
+                            <br />행복하게 살겠습니다.
+                        </p>
+                        <div style="margin-top: 50px;">
+                             
+                            <p class="parent-name">김현승<span class="child-name"> 신랑 아버지</span></p>
+                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                            <hr />
+                        
+                            <p class="parent-name">최영희<span class="child-name"> 신랑 어머니</span></p>
+                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                            <hr />
+                        
+                            <p class="parent-name">김정희<span class="child-name"> 신랑</span></p>
+                            <p class="account" onclick="copyToClipboard('카카오뱅크 3333-01-0582511');">카카오뱅크 3333-01-0582511&nbsp;<img src="resources/image/copy.png"/></p>
+                        
+                        </div>
+                        <button class="custom-button" onclick="closeAccount();">×</button>
                     </div>
                 </div>
             </li>
