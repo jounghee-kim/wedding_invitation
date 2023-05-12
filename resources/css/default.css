@@ -387,6 +387,14 @@ body p {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    box-shadow: 0 3px #999;
+}
+
+.fourth-content-shuttle .custom-button:active {
+    background-color: rgba(197, 152, 92, 0.7);
+    box-shadow: 0 1px #666;
+    transform: translateY(2px); 
+    transform: translateX(-50%);
 }
 
 .fourth-content .title {
@@ -481,6 +489,13 @@ body p {
     color: whitesmoke; 
     border-radius: 3px; 
     padding: 0px 3px;
+    box-shadow: 0 3px #999;
+}
+
+.fifth-content table .d-day:active {
+    background-color: #673f10; 
+    box-shadow: 0 1px #666;
+    transform: translateY(2px); 
 }
 
 .sixth-content {
@@ -677,6 +692,14 @@ body p {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    box-shadow: 0 3px #999;
+}
+
+.seventh-content-sub .custom-button:active {
+    background-color: rgba(197, 152, 92, 0.7);
+    box-shadow: 0 1px #666;
+    transform: translateY(2px); 
+    transform: translateX(-50%);
 }
 
 .seventh-content .account {
@@ -709,6 +732,13 @@ div
     border-radius: 50px;
     padding: 5px 20px;
     font-size: 14px;
+    box-shadow: 0 3px #999;
+}
+
+.custom-button:active {
+    background-color: rgba(197, 152, 92, 0.7);
+    box-shadow: 0 1px #666;
+    transform: translateY(2px); 
 }
 
 hr {

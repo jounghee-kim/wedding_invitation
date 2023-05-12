@@ -109,10 +109,15 @@ function launchDaumMap() {
 }
 
 function launchKakaoMap() {
-    location.href = "kakaomap://place?id=7975840";
-    setTimeout(function() {
+    try {
+        location.href = "kakaomap://place?id=7975840";
+    } catch (e) {
         location.href = "https://m.map.kakao.com/actions/searchView?q=at%ED%8F%AC%EB%A0%88#!/2107641562/map/place";
-    }, 500);
+    }
+    // location.href = "kakaomap://place?id=7975840";
+    // setTimeout(function() {
+    //     location.href = "https://m.map.kakao.com/actions/searchView?q=at%ED%8F%AC%EB%A0%88#!/2107641562/map/place";
+    // }, 500);
 }
 
 function launchNaverMap() {
