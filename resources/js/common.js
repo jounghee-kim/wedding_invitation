@@ -307,3 +307,13 @@ function ringPlay(){
     var player = document.querySelector("#lottie-ring");
     player.play();
 }
+
+function crownPlay(){
+    var player = document.querySelector("#lottie-crown");
+    player.play();
+}
+
+function santaPlay(){
+    var player = document.querySelector("#lottie-santa");
+    player.play();
+}

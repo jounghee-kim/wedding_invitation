@@ -53,7 +53,7 @@
             </li>
             <li>
                 <div class="second-content">
-                    <div class="second-content-detail">
+                    <div class="second-content-detail" onclick="crownPlay();">
                         <p class="letter">사랑으로 물들어가는 계절,
                             <br />연인에서 부부라는 이름으로
                             <br />평생을 함께 하고자 합니다.
@@ -62,7 +62,7 @@
                             <br/> 두 사람의 언약을 지켜봐 주시면
                             <br/> 더 없는 기쁨으로 간직하겠습니다.
                         </p>
-                        <lottie-player id='lottie-crown' src="https://assets3.lottiefiles.com/packages/lf20_vf7vzf32.json"  background="transparent"  speed="1"  mode="bounce" style="position: absolute; width: 344px; height: 213.5px;" hover loop></lottie-player>
+                        <lottie-player id='lottie-crown' src="https://assets3.lottiefiles.com/packages/lf20_vf7vzf32.json"  background="transparent"  speed="1"  mode="bounce" style="position: absolute; width: 344px; height: 213.5px;" loop></lottie-player>
                         <div style="margin-top: 120px;">
                             <hr />
                                 <p class="parent-name">김현승 최영희 <span class="child-name">의 장남</span> 정희<br />도종도 김정현 <span class="child-name">의 차녀</span> 유진
@@ -75,6 +75,7 @@
             <li>
                 <div class="fifth-content">
                     <div class="fifth-content-detail">
+                        <lottie-player id='lottie-santa' src="https://assets5.lottiefiles.com/packages/lf20_48upeBYVcZ.json"  background="transparent"  speed="1"  style="position:absolute; width:100%; top:-250px" ></lottie-player>
                         <lottie-player id='lottie-ring' src="https://assets3.lottiefiles.com/packages/lf20_qelkweiv.json"  background="transparent"  speed="1"  mode="bounce" style="position:absolute; width: 300px; height: 171px;"></lottie-player>
                         <p class="title">
                             Calendar
@@ -132,7 +133,7 @@
                                     <td>20</td>
                                     <td>21</td>
                                     <td>22</td>
-                                    <td class="holiday">23</td>
+                                    <td class="holiday" onclick="santaPlay();">23</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -272,6 +273,24 @@
                     </div>
                 </div>
             </li>
+            <li>
+                <div class="seventh-content">
+                    <div class="seventh-content-detail">
+                        <!-- <p class="title">마음 전하실 곳</p> -->
+                        <p class="letter">직접 만나지는 못해도
+                            <br />축하해주고 싶은 마음을 받아
+                            <br />행복하게 살겠습니다.
+                        </p>
+                        
+                        <lottie-player class='center_lottie' src="https://assets6.lottiefiles.com/packages/lf20_s6vm71il.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+                    
+                        <!-- <div style="position: absolute; width: 100%; bottom: 80px; text-align: center;">
+                            <button class="custom-button" onclick="openGroomAccount();">신랑 혼주 계좌번호</button><br/><br/>
+                            <button class="custom-button" onclick="openBrideAccount();">신부 혼주 계좌번호</button>
+                        </div> -->
+                    </div>
+                </div>
+            </li>
             <!-- <li class="sixth-content">
                 <div class="sixth-content-detail">
                     <p class="title">축하메시지</p>
@@ -309,6 +328,25 @@
             // initializeFirebaseDB();
 
             var sakura = new Sakura('body');
+            // var sakura = new Sakura('body', {
+            //     colors: [
+            //         {
+            //             gradientColorStart: '#FCFCFC',
+            //             gradientColorEnd: '#F5F5F5',
+            //             gradientColorDegree: 120,
+            //         },
+            //         {
+            //             gradientColorStart: '#FAFFFF',
+            //             gradientColorEnd: '#FDFDFD',
+            //             gradientColorDegree: 120,
+            //         },
+            //         {
+            //             gradientColorStart: '#FFFAFA',
+            //             gradientColorEnd: '#FBFBFB',
+            //             gradientColorDegree: 120,
+            //         },
+            //     ],
+            // });
 
         });
         $("body").waitForImages(true).done(function() {
