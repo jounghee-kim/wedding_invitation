@@ -715,7 +715,50 @@ body p {
     font-size: 14px;
 }
 
+/* 일곱번째 컨텐츠 */
+.eighth-content {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    mix-blend-mode: multiply;
+    display: table;
+}
 
+.eighth-content-detail {
+    display: table-cell;
+    vertical-align: middle;
+    opacity: none;
+    position: absolute;
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.eighth-content .title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom:  25px;
+    color: rgba(162, 125, 64, 0.74);
+}
+
+.eighth-content .poem {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1.0px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.eighth-content .letter {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1.0px;
+    margin-top:  35px;
+    line-height: 2.0;
+}
 
 
 
