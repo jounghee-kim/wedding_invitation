@@ -75,8 +75,8 @@
             <li>
                 <div class="fifth-content">
                     <div class="fifth-content-detail">
-                        <lottie-player id='lottie-santa' src="https://assets5.lottiefiles.com/packages/lf20_48upeBYVcZ.json"  background="transparent"  speed="1"  style="position:absolute; width:100%; top:-250px" ></lottie-player>
-                        <lottie-player id='lottie-ring' src="https://assets3.lottiefiles.com/packages/lf20_qelkweiv.json"  background="transparent"  speed="1"  mode="bounce" style="position:absolute; width: 300px; height: 171px;"></lottie-player>
+                        <lottie-player id='lottie-santa' src="https://assets5.lottiefiles.com/packages/lf20_48upeBYVcZ.json"  background="transparent"  speed="1"  style="position:absolute; width:100%; top:-250px; pointer-events:none;" ></lottie-player>
+                        <lottie-player id='lottie-party' src="https://assets4.lottiefiles.com/packages/lf20_ZF8J0eEWCR.json"  background="transparent"  speed="1"  style="position:absolute; width:460px; top:0px; left:-50px; pointer-events:none;"></lottie-player>
                         <p class="title">
                             Calendar
                         </p>
@@ -105,7 +105,7 @@
                                     <td class="holiday">2</td>
                                 </tr>
                                 <tr>
-                                    <td style="font-weight: bold;" onclick="ringPlay();">
+                                    <td style="font-weight: bold;" onclick="partyPlay();">
                                         <span class="d-day">12. 3</span>
                                         <br>
                                         <span style="line-height: 2.0;">💍</span>
@@ -328,26 +328,7 @@
             // initializeFirebaseDB();
 
             var sakura = new Sakura('body');
-            // var sakura = new Sakura('body', {
-            //     colors: [
-            //         {
-            //             gradientColorStart: '#FCFCFC',
-            //             gradientColorEnd: '#F5F5F5',
-            //             gradientColorDegree: 120,
-            //         },
-            //         {
-            //             gradientColorStart: '#FAFFFF',
-            //             gradientColorEnd: '#FDFDFD',
-            //             gradientColorDegree: 120,
-            //         },
-            //         {
-            //             gradientColorStart: '#FFFAFA',
-            //             gradientColorEnd: '#FBFBFB',
-            //             gradientColorDegree: 120,
-            //         },
-            //     ],
-            // });
-
+            
         });
         $("body").waitForImages(true).done(function() {
             $("#div-loading").animate({opacity: 0}, 1000, function() {

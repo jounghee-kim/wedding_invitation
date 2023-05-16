@@ -303,17 +303,37 @@ function convertMsg (html) {
     return tmp.textContent || tmp.innerText || "";
 }
 
-function ringPlay(){
-    var player = document.querySelector("#lottie-ring");
-    player.play();
+var on_party=true;
+function partyPlay(){
+    var player = document.querySelector("#lottie-party");
+    if (on_party){
+        player.play();
+        on_party=false;
+        setTimeout(function() {
+            player.stop();
+            on_party=true;
+        }, 4500);
+    }
 }
 
+var on_crown=true;
 function crownPlay(){
     var player = document.querySelector("#lottie-crown");
-    player.play();
+    if (on_crown){
+        player.play();
+        on_party=false;
+    }
 }
 
+var on_santa=true;
 function santaPlay(){
     var player = document.querySelector("#lottie-santa");
-    player.play();
+    if (on_santa){
+        player.play();
+        on_santa=false;
+        setTimeout(function() {
+            player.stop();
+            on_santa=true;
+        }, 3000);
+    }
 }
